@@ -1,0 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 45 100% 98%;
+    --foreground: 20 14.3% 21.6%;
+
+    --card: 45 100% 98%;
+    --card-foreground: 20 14.3% 21.6%;
+
+    --popover: 45 100% 98%;
+    --popover-foreground: 20 14.3% 21.6%;
+
+    --primary: 22 89% 52%;
+    --primary-foreground: 45 100% 98%;
+
+    --secondary: 36 100% 90%;
+    --secondary-foreground: 20 14.3% 21.6%;
+
+    --muted: 36 100% 95%;
+    --muted-foreground: 20 7.1% 43.5%;
+
+    --accent: 36 100% 95%;
+    --accent-foreground: 20 14.3% 21.6%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 45 100% 98%;
+
+    --border: 36 100% 87%;
+    --input: 36 100% 87%;
+    --ring: 22 89% 52%;
+
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-sans;
+    background-image: url('/images/subtle-pattern.svg');
+    background-repeat: repeat;
+    background-size: 180px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .indian-border {
+    @apply relative;
+  }
+  
+  .indian-border::before {
+    content: '';
+    @apply absolute inset-0 border-2 border-gold p-2 rounded-xl -z-10 opacity-60;
+    transform: translate(6px, 6px);
+  }
+
+  .section-title {
+    @apply font-serif text-3xl md:text-4xl font-bold text-center relative mb-6 inline-block;
+  }
+  
+  .section-title::after {
+    content: '';
+    @apply block h-1 bg-primary mt-2 rounded-full;
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  .timeline-item {
+    @apply relative pl-10 pb-10 border-l-2 border-primary/30;
+  }
+  
+  .timeline-item::before {
+    content: '';
+    @apply absolute left-[-9px] top-0 w-4 h-4 rounded-full bg-primary border-2 border-soft-yellow;
+  }
+
+  .memory-card {
+    @apply bg-white rounded-xl overflow-hidden shadow-md transition-transform hover:scale-105 duration-300;
+  }
+
+  .cultural-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23D4AF37' fill-opacity='0.1'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  .cultural-motif {
+    @apply w-12 h-12 md:w-16 md:h-16 absolute opacity-10 text-gold;
+  }
+}
