@@ -17,7 +17,7 @@ const milestones: Milestone[] = [
     date: "July 10, 2024",
     ageInDays: 25,
     description: "The most precious moment when our little one smiled for the first time, melting our hearts completely.",
-    imageUrl: "/placeholder.svg",
+    imageUrl: "public/month1/10.jpg",
   },
   {
     id: 2,
