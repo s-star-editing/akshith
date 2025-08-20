@@ -17,7 +17,7 @@ const milestones: Milestone[] = [
     date: "July 10, 2024",
     ageInDays: 25,
     description: "The most precious moment when our little one smiled for the first time, melting our hearts completely.",
-    imageUrl: "public/month1/10.jpg",
+    imageUrl: "public/month1/file.svg",
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ const milestones: Milestone[] = [
     date: "July 10, 2024",
     ageInDays: 25,
     description: "The most precious moment when our little one smiled for the first time, melting our hearts completely.",
-    imageUrl: "/placeholder.svg",
+    imageUrl: "/public/month1/file.svg",
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ const milestones: Milestone[] = [
     date: "July 25, 2024",
     ageInDays: 40,
     description: "We officially named our bundle of joy in a beautiful traditional ceremony surrounded by family.",
-    imageUrl: "/placeholder.svg",
+    imageUrl: "/public/month1/file.svg",
   },
   {
     id: 4,
@@ -41,7 +41,7 @@ const milestones: Milestone[] = [
     date: "August 5, 2024",
     ageInDays: 51,
     description: "The sweetest sound of laughter filled our home for the first time!",
-    imageUrl: "/placeholder.svg",
+    imageUrl: "/public/month1/file.svg",
   },
   {
     id: 5,
@@ -49,7 +49,7 @@ const milestones: Milestone[] = [
     date: "October 31, 2024",
     ageInDays: 138,
     description: "Celebrated the festival of lights with our little diya who brightens our lives.",
-    imageUrl: "/placeholder.svg",
+    imageUrl: "/public/month1/file.svg",
   }
   ];
 
